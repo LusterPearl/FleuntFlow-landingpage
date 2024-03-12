@@ -1,0 +1,209 @@
+body{
+    margin:0;
+    padding: 0;
+    background-color: rgba(0, 123, 255, 0.42);
+   }
+
+header {
+    background-color: #4a80fc;
+    color: whitesmoke;
+    padding: 15px;
+    text-align: center;
+    box-shadow: 0px 2px 2px rgba(3, 5, 129, 0.9);
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+#first-section {
+    display: flex;
+    margin-top: 20px;
+    background-color: rgb(9, 28, 83);
+}
+.translator {
+    background-image: url('../FluentFlow-landingPage/Image/Translator2.jpg');
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 500px;
+    /*margin-top: 20px;*/
+    margin-left: 500px;
+    margin-bottom: -300px;
+}
+
+.diag {
+    position: relative; /* Required for pseudo-element positioning */
+    overflow: hidden; /* Clip overflowing content */
+    display: inline-block; /* Allow for rotation */
+  }
+  
+  .diag h1 {
+    color: white; /* Text color */
+    font-size: 3em; /* Adjust font size as needed */
+    text-align: center; /* Center text within the element */
+    margin: 0; /* Remove default margin */
+  }
+
+  .diag p {
+    color: white; /* Adjust text color as needed */
+    font-size: 1.2em; /* Adjust font size as needed */
+    text-align: center;
+    margin: 10px 0; /* Add some space between heading and paragraph */
+    font-style: italic; /* Add a slight italic style */
+  }
+  
+  
+  .diag::before,
+  .diag::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /* Animation properties for blinking effect */
+    animation: blink 1.5s infinite alternate;
+  }
+  
+  /* Star-shaped border using pseudo-elements */
+  .diag::before {
+    border: 20px solid transparent;
+    border-top-color: gold; /* Adjust border color */
+    /* Star points using border-radius and positioning */
+    border-radius: 50% 0 0 50% / 40% 0 0 40%;
+    transform: rotate(45deg); /* Initial rotation for star shape */
+    /* Animation for rotation effect */
+    animation: rotate 5s linear infinite;
+  }
+  
+  .diag::after {
+    border: 20px solid transparent;
+    border-bottom-color: gold; /* Adjust border color */
+    /* Star points using border-radius and positioning */
+    border-radius: 0 50% 50% 0 / 0 40% 40% 0;
+    transform: rotate(-45deg); /* Initial rotation for star shape */
+  }
+  
+  /* Animations */
+  @keyframes blink {
+    from, to {
+      opacity: 0;
+    }
+    50% {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes rotate {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  
+#second-section {
+    display: flex;
+    width: 70%;
+    margin-top: 50px;
+    margin-left: 200px;
+   /* margin-left: 10px;*/
+}
+
+.text-area,
+.image-area { /* Apply styles to all three sections */
+  flex: 1;  /* Makes sections share remaining space equally */
+  background-repeat: no-repeat;
+  background-size: cover; /* Ensures images cover the entire area */
+  margin: 10px;
+  height: 550px;
+  transform: skewX(-7deg);
+}
+
+.text-area {
+    background-image: url('../FluentFlow-landingPage/Image/IMG_5607.jpg');   
+}
+
+.image-area {
+    background-image: url('../FluentFlow-landingPage/Image/IMG_5608.jpg');
+    margin-left: 20px;
+}
+
+/*.video-container {
+    background-color:  rgb(9, 28, 83);  position: relative;
+    margin-top: 30px;
+    margin-bottom: 20px; 
+    display: flex;
+    justify-content: flex-end;
+ }
+  */
+ #third-section {
+    text-align: center; /* Center content within the section */
+    position: relative; /* Required for absolute positioning of content */
+    overflow: hidden; /* Clip overflowing video content */
+    padding: 50px; /* Add some top and bottom padding */
+    color: whitesmoke;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+ }
+  
+  .video-container {
+    background-color: rgb(9, 28, 83);
+    position: relative;
+    display: flex; 
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+  }
+  
+
+  
+  /*.feature-content {
+    position: absolute; /* Position content absolutely within the container */
+   /* bottom: 0; /* Place content at the bottom */
+   /* left: 0; /* Align content to the left */
+   /* width: 100%; /* Stretch content to full width */
+   /* padding: 20px; /* Add some padding for spacing */
+   /* color: white; /* Text color for descriptions and name */
+  /*  background-color: rgba(9, 28, 83, 0.7); /* Semi-transparent background */
+   /* text-align: center; /* Center text within the content area */
+
+  
+   #fourth-section {
+    text-align: center; /* Center content within the section */
+    padding: 50px 0; /* Add top and bottom padding */
+  }
+  
+  .about-content {
+    max-width: 800px; /* Limit content width for better responsiveness */
+    margin: 0 auto; /* Center content horizontally */
+  }
+  
+  .team-members {
+    list-style: none; /* Remove default bullet points */
+    padding: 0;
+    margin: 0;
+  }
+  
+  .team-members li {
+    margin-bottom: 10px;
+  }
+  
+footer {
+    background-color: #4a80fc;
+    color: white;
+    text-align: center;
+    padding: 2px;
+    /*position: fixed;*/
+    bottom: 0;
+    width: 100%;
+}
