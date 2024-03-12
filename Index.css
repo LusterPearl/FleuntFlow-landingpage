@@ -47,17 +47,17 @@ nav ul li {
   }
   
   .diag h1 {
-    color: white; /* Text color */
-    font-size: 3em; /* Adjust font size as needed */
-    text-align: center; /* Center text within the element */
-    margin: 0; /* Remove default margin */
+    color: white;
+    font-size: 3em; 
+    text-align: center; 
+    margin: 0; 
   }
 
   .diag p {
-    color: white; /* Adjust text color as needed */
-    font-size: 1.2em; /* Adjust font size as needed */
+    color: white; 
+    font-size: 1.2em;
     text-align: center;
-    margin: 10px 0; /* Add some space between heading and paragraph */
+    margin: 10px 0; 
     font-style: italic; /* Add a slight italic style */
   }
   
@@ -121,10 +121,10 @@ nav ul li {
 }
 
 .text-area,
-.image-area { /* Apply styles to all three sections */
+.image-area { 
   flex: 1;  /* Makes sections share remaining space equally */
   background-repeat: no-repeat;
-  background-size: cover; /* Ensures images cover the entire area */
+  background-size: cover;
   margin: 10px;
   height: 550px;
   transform: skewX(-7deg);
@@ -139,19 +139,11 @@ nav ul li {
     margin-left: 20px;
 }
 
-/*.video-container {
-    background-color:  rgb(9, 28, 83);  position: relative;
-    margin-top: 30px;
-    margin-bottom: 20px; 
-    display: flex;
-    justify-content: flex-end;
- }
-  */
  #third-section {
-    text-align: center; /* Center content within the section */
-    position: relative; /* Required for absolute positioning of content */
-    overflow: hidden; /* Clip overflowing video content */
-    padding: 50px; /* Add some top and bottom padding */
+    text-align: center;
+    position: relative;
+    overflow: hidden; 
+    padding: 50px; 
     color: whitesmoke;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: large;
@@ -178,7 +170,7 @@ nav ul li {
   .about-content {
     max-width: 800px; /* Limit content width for better responsiveness */
     margin: 0 auto; /* Center content horizontally */
-    display: flex; /* Use flexbox for layout */
+    display: flex;
     flex-wrap: wrap; /* Allow content to wrap if needed */
   }
   
@@ -190,10 +182,10 @@ nav ul li {
   }
   
   .team-member img {
-    width: 150px; /* Adjust image width as needed */
-    height: 150px; /* Adjust image height as needed */
-    border-radius: 50%; /* Add rounded corners for a more polished look */
-    margin-bottom: 10px; /* Add space between image and text */
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 10px;
   }
   
   
