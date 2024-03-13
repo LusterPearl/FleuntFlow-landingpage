@@ -1,7 +1,8 @@
 body{
     margin:0;
     padding: 0;
-    background-color: rgba(0, 123, 255, 0.42);
+    /*background-color: rgba(0, 123, 255, 0.42);*/
+    background-color: lightblue;
    }
 
 header {
@@ -21,6 +22,16 @@ nav ul {
 nav ul li {
     display: inline-block;
     margin-right: 20px;
+}
+
+a {
+  color: inherit; /* Inherit color from parent (header) */
+  text-decoration: none; /* Remove underline */
+  transition: color 0.3s ease-in-out; /* Add smooth hover effect */
+}
+
+a:hover {
+  color: #f0f0f0; /* Change link color on hover */
 }
 
 #first-section {
