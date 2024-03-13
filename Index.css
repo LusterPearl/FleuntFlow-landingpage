@@ -111,18 +111,18 @@ nav ul li {
       transform: rotate(360deg);
     }
   }
-  
-#second-section {
-    display: flex;
-    width: 70%;
-    margin-top: 50px;
-    margin-left: 200px;
-   /* margin-left: 10px;*/
+
+#second-section { 
+  display: flex;
+  width: 32%;
+  margin-top: 50px;
+  margin-left: 100px;
+  margin-right: auto;
 }
 
-.text-area,
-.image-area { 
-  flex: 1;  /* Makes sections share remaining space equally */
+.text-area {
+  flex: 1;
+  background-image: url('../FluentFlow-landingPage/Image/IMG_5607.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   margin: 10px;
@@ -130,16 +130,70 @@ nav ul li {
   transform: skewX(-7deg);
 }
 
-.text-area {
-    background-image: url('../FluentFlow-landingPage/Image/IMG_5607.jpg');   
+.text1 {
+  flex: 1;
+  padding: 20px;
 }
 
-.image-area {
-    background-image: url('../FluentFlow-landingPage/Image/IMG_5608.jpg');
-    margin-left: 20px;
+#second-section {  
+  display: flex;
+  width: 50%;  
+  margin: 50px auto; 
 }
 
- #third-section {
+.text {
+  display: flex;
+  flex-direction: row; 
+  margin: 10px;
+  transform: skewX(-7deg);
+}
+
+.text img {
+  width: 40%; 
+  height: auto;
+  margin-right: 20px; 
+}
+
+.text-content {
+  flex: 1; 
+  padding: 20px; 
+}
+
+.text-content h2 {
+  margin-bottom: 10px;
+}
+
+
+#second-section2 {
+  display: flex;
+  width: 50%;  
+  margin: 50px auto;
+}
+
+.image-text {
+  display: flex;
+  flex-direction: row; 
+  margin: 10px;
+  transform: skewX(7deg);
+}
+
+.image-text img {
+  width: 40%; 
+  height: auto;
+  margin-right: 20px; 
+}
+
+.image-content {
+  flex: 1; 
+  padding: 20px; 
+}
+
+.image-content h2 {
+  margin-bottom: 10px;
+}
+
+
+#third-section {
     text-align: center;
     position: relative;
     overflow: hidden; 
@@ -187,9 +241,6 @@ nav ul li {
     border-radius: 50%;
     margin-bottom: 10px;
   }
-  
-  
-  
   
 footer {
     background-color: #4a80fc;
