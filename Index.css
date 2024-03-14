@@ -1,4 +1,4 @@
-body{
+body {
     margin:0;
     padding: 0;
     /*background-color: rgba(0, 123, 255, 0.42);*/
@@ -46,7 +46,6 @@ a:hover {
     justify-content: center;
     width: 100%;
     height: 500px;
-    /*margin-top: 20px;*/
     margin-left: 500px;
     margin-bottom: -300px;
 }
@@ -262,3 +261,92 @@ footer {
     bottom: 0;
     width: 100%;
 }
+
+/* For small devices (phones) */
+@media (max-width: 576px) {
+  header {
+      padding: 10px;
+  }
+
+  .translator {
+      margin-left: -5px;
+      margin-bottom: 0;
+      max-width: 100%;
+      height: 200px;
+  }
+
+  .text, .image-text {
+      flex-direction: column;
+  }
+
+  .text img, .image-text img {
+      width: 100%;
+      margin-right: 0;
+      margin-bottom: 10px;
+  }
+
+  .text-content, .image-content {
+      padding: 10px;
+  }
+
+  .team-member {
+      width: 100%;
+      margin-left: 0;
+  }
+}
+
+/* For medium devices (tablets) */
+@media (min-width: 577px) and (max-width: 992px) {
+  .translator {
+    width: 100%;
+    margin-left: 20px;
+  }
+  .text, .image-text {
+      flex-direction: row;
+  }
+
+  .text img, .image-text img {
+      width: 40%;
+      margin-right: 20px;
+      margin-bottom: 0;
+  }
+
+  .text-content, .image-content {
+      padding: 20px;
+  }
+
+  .team-member {
+      width: 50%;
+      margin-left: 0;
+  }
+}
+
+/* For large devices (desktops) */
+@media (min-width: 993px) {
+  header {
+      padding: 15px;
+  }
+
+  .translator {
+      margin-left: 500px;
+      margin-bottom: -300px;
+  }
+
+  .text img, .image-text img {
+      width: 40%;
+      margin-right: 20px;
+      margin-bottom: 0;
+  }
+
+  .text-content, .image-content {
+      padding: 20px;
+  }
+
+  .team-member {
+      width: 50%;
+      margin-left: 150px;
+  }
+}
+
+
+
